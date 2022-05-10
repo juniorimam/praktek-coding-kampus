@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-Prodi" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Prodi"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Prodi" destdir="${build.generated.dir}/jax-wsCache/Prodi" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Prodi/wsdl/localhost_8080/server/Prodi.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/Prodi?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Prodi/wsdl/localhost_8080/server/Prodi.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Prodi"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Prodi">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Prodi" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/prodi"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Prodi"/>
+    </target>
+    <target name="wsimport-client-Matakuliah" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Matakuliah"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Matakuliah" destdir="${build.generated.dir}/jax-wsCache/Matakuliah" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Matakuliah/wsdl/localhost_8080/server/Matakuliah.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/Matakuliah?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Matakuliah/wsdl/localhost_8080/server/Matakuliah.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Matakuliah"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Matakuliah">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Matakuliah" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/matakuliah"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Matakuliah"/>
+    </target>
+    <target name="wsimport-client-Kelaskuliah" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Kelaskuliah"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Kelaskuliah" destdir="${build.generated.dir}/jax-wsCache/Kelaskuliah" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Kelaskuliah/wsdl/localhost_8080/server/Kelaskuliah.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/Kelaskuliah?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Kelaskuliah/wsdl/localhost_8080/server/Kelaskuliah.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Kelaskuliah"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Kelaskuliah">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Kelaskuliah" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/kelas"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Kelaskuliah"/>
+    </target>
+    <target name="wsimport-client-Mahasiswa" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Mahasiswa"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Mahasiswa" destdir="${build.generated.dir}/jax-wsCache/Mahasiswa" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Mahasiswa/wsdl/localhost_8080/server/Mahasiswa.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/Mahasiswa?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Mahasiswa/wsdl/localhost_8080/server/Mahasiswa.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Mahasiswa"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Mahasiswa">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Mahasiswa" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/mahasiswa"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Mahasiswa"/>
+    </target>
+    <target name="wsimport-client-DetailMahasiswa" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/DetailMahasiswa"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/DetailMahasiswa" destdir="${build.generated.dir}/jax-wsCache/DetailMahasiswa" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/DetailMahasiswa/wsdl/localhost_8080/server/DetailMahasiswa.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/DetailMahasiswa?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/DetailMahasiswa/wsdl/localhost_8080/server/DetailMahasiswa.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/DetailMahasiswa"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/DetailMahasiswa">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-DetailMahasiswa" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/mahasiswa"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/DetailMahasiswa"/>
+    </target>
+    <target name="wsimport-client-HistoryNilai" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/HistoryNilai"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/HistoryNilai" destdir="${build.generated.dir}/jax-wsCache/HistoryNilai" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/HistoryNilai/wsdl/localhost_8080/server/HistoryNilai.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/HistoryNilai?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/HistoryNilai/wsdl/localhost_8080/server/HistoryNilai.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/HistoryNilai"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/HistoryNilai">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-HistoryNilai" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/history"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/HistoryNilai"/>
+    </target>
+    <target name="wsimport-client-HistoryPendidikan" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/HistoryPendidikan"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/HistoryPendidikan" destdir="${build.generated.dir}/jax-wsCache/HistoryPendidikan" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/HistoryPendidikan/wsdl/localhost_8080/server/HistoryPendidikan.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/HistoryPendidikan?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/HistoryPendidikan/wsdl/localhost_8080/server/HistoryPendidikan.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/HistoryPendidikan"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/HistoryPendidikan">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-HistoryPendidikan" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/history"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/HistoryPendidikan"/>
+    </target>
+    <target name="wsimport-client-Nilai" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/Nilai"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/Nilai" destdir="${build.generated.dir}/jax-wsCache/Nilai" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/Nilai/wsdl/localhost_8080/server/Nilai.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8080/server/Nilai?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/Nilai/wsdl/localhost_8080/server/Nilai.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/Nilai"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/Nilai">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-Nilai" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/siakad/nilai"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/Nilai"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-Prodi, wsimport-client-Matakuliah, wsimport-client-Kelaskuliah, wsimport-client-Mahasiswa, wsimport-client-DetailMahasiswa, wsimport-client-HistoryNilai, wsimport-client-HistoryPendidikan, wsimport-client-Nilai"/>
+</project>

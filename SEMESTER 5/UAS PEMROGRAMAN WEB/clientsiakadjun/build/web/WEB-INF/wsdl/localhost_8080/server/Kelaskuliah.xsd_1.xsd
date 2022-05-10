@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://kelas.siakad/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://kelas.siakad/">
+
+<xs:element name="addKelas" type="tns:addKelas"/>
+
+<xs:element name="addKelasResponse" type="tns:addKelasResponse"/>
+
+<xs:element name="delKelas" type="tns:delKelas"/>
+
+<xs:element name="delKelasResponse" type="tns:delKelasResponse"/>
+
+<xs:element name="editKelas" type="tns:editKelas"/>
+
+<xs:element name="editKelasResponse" type="tns:editKelasResponse"/>
+
+<xs:element name="getKelas" type="tns:getKelas"/>
+
+<xs:element name="getKelasResponse" type="tns:getKelasResponse"/>
+
+<xs:element name="tampilKelas" type="tns:tampilKelas"/>
+
+<xs:element name="tampilKelasResponse" type="tns:tampilKelasResponse"/>
+
+<xs:complexType name="addKelas">
+<xs:sequence>
+<xs:element name="id_kelas_kuliah" type="xs:int"/>
+<xs:element name="kode_prodi" type="xs:int"/>
+<xs:element name="semester" type="xs:string" minOccurs="0"/>
+<xs:element name="kode_matakuliah" type="xs:int"/>
+<xs:element name="nama_kelas" type="xs:string" minOccurs="0"/>
+<xs:element name="dosen" type="xs:string" minOccurs="0"/>
+<xs:element name="jumlah_peserta" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addKelasResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilKelas">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilKelasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editKelas">
+<xs:sequence>
+<xs:element name="id_kelas_kuliah" type="xs:int"/>
+<xs:element name="kode_prodi" type="xs:int"/>
+<xs:element name="semester" type="xs:string" minOccurs="0"/>
+<xs:element name="kode_matakuliah" type="xs:int"/>
+<xs:element name="nama_kelas" type="xs:string" minOccurs="0"/>
+<xs:element name="dosen" type="xs:string" minOccurs="0"/>
+<xs:element name="jumlah_peserta" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editKelasResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="delKelas">
+<xs:sequence>
+<xs:element name="id_kelas_kuliah" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delKelasResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getKelas">
+<xs:sequence>
+<xs:element name="id_kelas_kuliah" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getKelasResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

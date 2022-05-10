@@ -1,0 +1,200 @@
+@keyframes fadeIn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+::-webkit-scrollbar{
+	display: none;
+}
+
+@font-face{
+	font-family: nexabold;
+	src: url(../font/nexabold.otf);
+}
+
+@font-face{
+	font-family: nexalight;
+	src: url(../font/nexalight.otf);
+}
+
+body{
+	animation: fadeIn 1s;
+	background-color: #fff;
+	font-family: nexalight;
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	height: 60px;
+	background-color: #0060b1;
+	color: #fff;
+	padding-bottom: 550px;
+}
+
+.imgheader{
+	width:100%;
+	  height: 580px;
+	  background-image:url(../img/header.jpg);
+	  background-position:center center;
+	  background-attachment:fixed;
+	  background-size:cover;
+	  float: left;
+}
+
+.imgheader h1{
+	position:absolute;
+	  top:42%;
+	  left:23%;
+	  font:30px nexabold;
+	  color:#fff;
+}
+
+.imgheader p{
+	position:absolute;
+	  top:50%;
+	  left:50%;
+	  transform:translate(-50%, -50%);
+	  -webkit-transform:translateX(-50%) translateY(-50%);
+	  font:15px nexalight;
+	  color:#fff;
+}
+
+.titleheader{
+	font-family: nexabold;
+	float: left;
+	font-size: 15pt;
+	padding-left: 100px;
+	margin-bottom: 15px;
+	cursor: default;
+}
+
+.tablemenu{
+	float: right;
+	padding-right: 100px;
+	padding-top: 6px;
+}
+
+.tablemenu td{
+	padding: 10px 30px;
+}
+
+#menu .tablemenu a:hover {
+	cursor: pointer;
+	color: #ffc800;
+}
+
+#menu .tablemenu a{
+	color: #fff;
+	font-size: 15px;
+	text-decoration: none;
+}
+
+.isi1{
+	padding: 60px 100px;
+	padding-bottom: 30px;
+}
+
+.isimap{
+	color: #fff;
+	padding: 30px 100px;
+	background-color: #0060b1;
+}
+
+.about{
+	padding: 30px 100px;
+	padding-bottom: 80px;
+}
+
+.about img{
+	width: 100%;
+	float: left;
+}
+
+.tableabout{
+	color: #fff;
+}
+
+.captionabout{
+	padding-top: 110px;
+	padding-left: 20px;
+	background-color: #0060b1;
+	height: 100px;
+}
+
+footer{
+	height: 230px;
+	color: #fff;
+	padding: 30px 100px;
+	padding-bottom: 10px;
+	background-color: #0060b1;
+}
+
+#tombolScrollTop
+{
+	left: 95%;
+	cursor: pointer;
+	position:fixed;
+	width: 50px;
+	bottom: 40px;
+}
+
+#peta {
+	width: 100%;
+	height: 500px;
+}
+
+.detailsma{
+	padding: 60px 100px;
+	color: #000;
+}
+
+.imgheadersma{
+	width:100%;
+	  height: 580px;
+	  background-image:url(../img/header.jpg);
+	  background-position:center center;
+	  background-attachment:fixed;
+	  background-size:cover;
+	  float: left;
+}
+
+.imgheadersma img{
+	position: absolute;
+	top: 25%;
+	left: 40%;
+}
+
+.imgheadersma h1{
+	position:absolute;
+	  top:70%;
+	  left:35%;
+	  font:30px nexabold;
+	  color:#fff;
+}
+
+.imgheadersma p{
+	position:absolute;
+	  top:80%;
+	  left:50%;
+	  transform:translate(-50%, -50%);
+	  -webkit-transform:translateX(-50%) translateY(-50%);
+	  font:15px nexalight;
+	  color:#fff;
+}
+
+.linkmap{
+	padding-left: 5px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+}
+
+.linkmap a{
+	text-decoration: none;
+	color: #0060b1;
+	font-family: nexabold;
+}

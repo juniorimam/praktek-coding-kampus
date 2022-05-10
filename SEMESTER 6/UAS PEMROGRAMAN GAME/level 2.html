@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LEVEL 2 - HINDARI COVID-19</title>
+        <meta charset="utf-8">
+        <link href="game.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="game_level2.js"></script>
+    </head>
+    <body>
+        <div id="game">
+            <div id="gameUI">
+                <!-- menampilkan intro game -->
+				<div id="gameIntro">
+                    <h1 style="color: red;">LEVEL 2<br>HINDARI VIRUS COVID-19<br>HATI-HATI VIRUS COVID-19 BERTAMBAH BANYAK...</h1><br>
+                    <p>KITA HARUS MENGHINDARI VIRUS COVID-19, DENGAN MENCUCI MEREKA DENGAN SABUN<br>TEKAN TOMBOL START , kemudian 
+					tekan tombol panah untuk menghindari mereka,<br>dan tekan spasi untuk melempar sabun</p>
+                    <p><a id="gamePlay" class="button" href="">START</a></p>
+                    <p class="credit">Dibuat oleh :<br> 17.5.00105 - Junior Imam Nugroho<br>17.5.00136 - Yusuf Fajar Kurniawan</p>
+                </div>
+				
+				<!-- menampilkan waktu bermain pojok kiri atas -->
+                <div id="gameStats">
+                    <p>Waktu: <span class="gameScore"></span> detik</p>
+                    <p><a class="gameReset" href="">Reset</a></p>
+                </div>
+				
+				<!-- menampilkan Game over -->
+                <div id="gameOver">
+                    <h1 style="color: red;">KAMU TERINFEKSI VIRUS COVID-19</h1><br>
+                    <p>Hindari COVID-19 dengan sering mencuci tangan dan tetap mematuhi protokol kesehatan.<br>Kamu telah menempuh perjalanan selama <span class="gameScore"></span> detik.</p>
+                    <p><a class="gameReset button" href="">Main lagi</a></p>
+                </div>
+
+                <div id="gameComplete">
+                    <h1 style="color: red;">SELAMAT KAMU LOLOS DARI VIRUS COVID-19</h1><br>
+                    <p>Hindari COVID-19 dengan sering mencuci tangan dan tetap mematuhi protokol kesehatan.<br>Kamu telah menempuh perjalanan selama <span class="gameScore"></span> detik.</p><br>TEKAN TOMBOL LANJUT, untuk ke level berikutnya.
+                    <p><a class="gamePlay button" href="level 3.html">LANJUT</a></p>
+                </div>
+                
+				
+            </div>
+			<!-- menampilkan area bermain game -->
+            <canvas id="gameCanvas" width="1000" height="600">
+                <!-- Insert fallback content here -->
+            </canvas>
+			
+			<!-- menentukan sound yang dipakai -->
+			<!-- sound  background bermain-->
+            <audio id="gameSoundBackground" loop>
+                <source src="background.mp3">
+            </audio>
+			<!-- sound  gas -->
+            <audio id="gameSoundThrust" loop>
+                <source src="thrust.mp3">
+            </audio>
+			<!-- sound  peluru kena asteroid-->
+            <audio id="gameSoundDeath">
+                <source src="death.mp3">
+            </audio>
+			<!-- sound  pesawat menabrak -->
+			<audio id="gameSoundBoom">
+                <source src="boom.mp3">
+            </audio>
+            <!-- sound  pesawat menabrak -->
+            <audio id="gameSoundWin">
+                <source src="win.mp3">
+            </audio>
+			
+        </div>
+    </body>
+</html>

@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://mahasiswa.siakad/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://mahasiswa.siakad/">
+
+<xs:element name="addMahasiswa" type="tns:addMahasiswa"/>
+
+<xs:element name="addMahasiswaResponse" type="tns:addMahasiswaResponse"/>
+
+<xs:element name="delMahasiswa" type="tns:delMahasiswa"/>
+
+<xs:element name="delMahasiswaResponse" type="tns:delMahasiswaResponse"/>
+
+<xs:element name="editMahasiswa" type="tns:editMahasiswa"/>
+
+<xs:element name="editMahasiswaResponse" type="tns:editMahasiswaResponse"/>
+
+<xs:element name="tampilMahasiswa" type="tns:tampilMahasiswa"/>
+
+<xs:element name="tampilMahasiswaResponse" type="tns:tampilMahasiswaResponse"/>
+
+<xs:complexType name="editMahasiswa">
+<xs:sequence>
+<xs:element name="nik" type="xs:int"/>
+<xs:element name="nim" type="xs:int"/>
+<xs:element name="kode_prodi" type="xs:int"/>
+<xs:element name="angkatan" type="xs:int"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+<xs:element name="tempat_lahir" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_lahir" type="xs:string" minOccurs="0"/>
+<xs:element name="jenis_kelamin" type="xs:string" minOccurs="0"/>
+<xs:element name="agama" type="xs:string" minOccurs="0"/>
+<xs:element name="nama_ibu_kandung" type="xs:string" minOccurs="0"/>
+<xs:element name="nisn" type="xs:int"/>
+<xs:element name="npwp" type="xs:int"/>
+<xs:element name="kewarganegaraan" type="xs:string" minOccurs="0"/>
+<xs:element name="jalan" type="xs:string" minOccurs="0"/>
+<xs:element name="dusun" type="xs:string" minOccurs="0"/>
+<xs:element name="rt" type="xs:string" minOccurs="0"/>
+<xs:element name="rw" type="xs:string" minOccurs="0"/>
+<xs:element name="kelurahan" type="xs:string" minOccurs="0"/>
+<xs:element name="kecamatan" type="xs:string" minOccurs="0"/>
+<xs:element name="kodepos" type="xs:int"/>
+<xs:element name="telepon" type="xs:string" minOccurs="0"/>
+<xs:element name="hp" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editMahasiswaResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilMahasiswa">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilMahasiswaResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMahasiswa">
+<xs:sequence>
+<xs:element name="nik" type="xs:int"/>
+<xs:element name="nim" type="xs:int"/>
+<xs:element name="kode_prodi" type="xs:int"/>
+<xs:element name="angkatan" type="xs:int"/>
+<xs:element name="nama" type="xs:string" minOccurs="0"/>
+<xs:element name="tempat_lahir" type="xs:string" minOccurs="0"/>
+<xs:element name="tanggal_lahir" type="xs:string" minOccurs="0"/>
+<xs:element name="jenis_kelamin" type="xs:string" minOccurs="0"/>
+<xs:element name="agama" type="xs:string" minOccurs="0"/>
+<xs:element name="nama_ibu_kandung" type="xs:string" minOccurs="0"/>
+<xs:element name="nisn" type="xs:int"/>
+<xs:element name="npwp" type="xs:int"/>
+<xs:element name="kewarganegaraan" type="xs:string" minOccurs="0"/>
+<xs:element name="jalan" type="xs:string" minOccurs="0"/>
+<xs:element name="dusun" type="xs:string" minOccurs="0"/>
+<xs:element name="rt" type="xs:string" minOccurs="0"/>
+<xs:element name="rw" type="xs:string" minOccurs="0"/>
+<xs:element name="kelurahan" type="xs:string" minOccurs="0"/>
+<xs:element name="kecamatan" type="xs:string" minOccurs="0"/>
+<xs:element name="kodepos" type="xs:int"/>
+<xs:element name="telepon" type="xs:string" minOccurs="0"/>
+<xs:element name="hp" type="xs:string" minOccurs="0"/>
+<xs:element name="email" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMahasiswaResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="delMahasiswa">
+<xs:sequence>
+<xs:element name="nik" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delMahasiswaResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>

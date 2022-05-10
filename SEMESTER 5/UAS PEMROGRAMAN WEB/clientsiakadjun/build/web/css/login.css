@@ -1,0 +1,76 @@
+body{
+        background-color: #223377;
+	background-size: 100%;
+}
+
+.sinus{
+	width: 30%;
+}
+
+#main{
+	width:350px;
+	max-width:350px;
+	background:#EFEFEF;
+	box-shadow: 8px 8px 15px #060d2e;
+	padding:18px;
+        margin-top:3%;
+	margin-left:35%;
+	border-radius: 5px;
+}
+
+#login{
+	width:310px;
+	max-width:310px;
+	height:auto;
+	border:0px solid #000;
+	margin:0 auto;
+	margin-top:10px;
+	margin-bottom:10px;
+}
+
+.notice{
+	font-family: roboto;
+        color: #c1c1c1;
+        font-size: 9pt;
+}
+
+.text{
+	font-size:32px;
+	font-family: Arial;
+}
+	
+.user{
+	font-size:15px;
+	text-align:center;
+	border-style: none;
+	border-bottom: 2px solid #F24800;
+	padding:12px; 
+	width:283px;
+
+}
+	
+.btn-login{
+	color:#FFF;
+	background:#F24800;
+	border-radius: 5px;
+	font-size:20px;
+	font-family: roboto;
+	font-weight:bold;
+	text-align:center;
+	border:1px solid #E1E1E1;
+	padding:12px;
+	width:308px;
+	cursor:pointer;
+}
+
+.btn-login:hover{
+	background-color: #fff;
+	color: #F24800;
+	border: 1px solid #F24800;
+}
+
+.copy{
+	color:#999;
+	font-size:8pt;
+	font-family:Arial;
+}

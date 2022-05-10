@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jax-ws xmlns="http://www.netbeans.org/ns/jax-ws/1">
+  <services>
+    <service name="Prodi">
+      <implementation-class>siakad.prodi.Prodi</implementation-class>
+    </service>
+    <service name="Matakuliah">
+      <implementation-class>siakad.matakuliah.Matakuliah</implementation-class>
+    </service>
+    <service name="Kelaskuliah">
+      <implementation-class>siakad.kelas.Kelaskuliah</implementation-class>
+    </service>
+    <service name="Mahasiswa">
+      <implementation-class>siakad.mahasiswa.Mahasiswa</implementation-class>
+    </service>
+    <service name="DetailMahasiswa">
+      <implementation-class>siakad.mahasiswa.DetailMahasiswa</implementation-class>
+    </service>
+    <service name="HistoryNilai">
+      <implementation-class>siakad.history.HistoryNilai</implementation-class>
+    </service>
+    <service name="HistoryPendidikan">
+      <implementation-class>siakad.history.HistoryPendidikan</implementation-class>
+    </service>
+    <service name="Nilai">
+      <implementation-class>siakad.nilai.Nilai</implementation-class>
+    </service>
+  </services>
+  <clients>
+    <client name="Prodi">
+      <wsdl-url>http://localhost:8080/serversiakadjun/Prodi?wsdl</wsdl-url>
+      <local-wsdl-file>localhost_8080/serversiakadjun/Prodi.wsdl</local-wsdl-file>
+      <package-name forceReplace="true">siakad.prodi_client</package-name>
+      <catalog-file>catalog.xml</catalog-file>
+      <wsimport-options>
+        <wsimport-option>
+          <wsimport-option-name>extension</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>verbose</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>fork</wsimport-option-name>
+          <wsimport-option-value>false</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>wsdlLocation</wsimport-option-name>
+          <wsimport-option-value>http://localhost:8080/serversiakadjun/Prodi?wsdl</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xnocompile</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>xendorsed</wsimport-option-name>
+          <wsimport-option-value>true</wsimport-option-value>
+        </wsimport-option>
+        <wsimport-option>
+          <wsimport-option-name>package</wsimport-option-name>
+          <wsimport-option-value>siakad.prodi_client</wsimport-option-value>
+        </wsimport-option>
+      </wsimport-options>
+    </client>
+  </clients>
+</jax-ws>

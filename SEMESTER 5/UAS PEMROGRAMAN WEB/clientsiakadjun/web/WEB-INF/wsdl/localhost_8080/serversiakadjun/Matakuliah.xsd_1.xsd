@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI (http://jax-ws.java.net). RI's version is Metro/2.3.1-b419 (branches/2.3.1.x-7937; 2014-08-04T08:11:03+0000) JAXWS-RI/2.2.10-b140803.1500 JAXWS-API/2.2.11 JAXB-RI/2.2.10-b140802.1033 JAXB-API/2.2.12-b140109.1041 svn-revision#unknown. --><xs:schema xmlns:tns="http://matakuliah.siakad/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://matakuliah.siakad/">
+
+<xs:element name="addMatkul" type="tns:addMatkul"/>
+
+<xs:element name="addMatkulResponse" type="tns:addMatkulResponse"/>
+
+<xs:element name="cariMatkul" type="tns:cariMatkul"/>
+
+<xs:element name="cariMatkulResponse" type="tns:cariMatkulResponse"/>
+
+<xs:element name="delMatkul" type="tns:delMatkul"/>
+
+<xs:element name="delMatkulResponse" type="tns:delMatkulResponse"/>
+
+<xs:element name="editMatkul" type="tns:editMatkul"/>
+
+<xs:element name="editMatkulResponse" type="tns:editMatkulResponse"/>
+
+<xs:element name="getMatkul" type="tns:getMatkul"/>
+
+<xs:element name="getMatkulResponse" type="tns:getMatkulResponse"/>
+
+<xs:element name="tampilMatkul" type="tns:tampilMatkul"/>
+
+<xs:element name="tampilMatkulResponse" type="tns:tampilMatkulResponse"/>
+
+<xs:complexType name="editMatkul">
+<xs:sequence>
+<xs:element name="kode_matakuliah" type="xs:int"/>
+<xs:element name="nama_matakuliah" type="xs:string" minOccurs="0"/>
+<xs:element name="kode_prodi" type="xs:int"/>
+<xs:element name="jenis_matakuliah" type="xs:string" minOccurs="0"/>
+<xs:element name="bobot_matakuliah" type="xs:int"/>
+<xs:element name="bobot_teori" type="xs:int"/>
+<xs:element name="bobot_praktikum" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="editMatkulResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="delMatkul">
+<xs:sequence>
+<xs:element name="kode_matakuliah" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="delMatkulResponse">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="getMatkul">
+<xs:sequence>
+<xs:element name="kode_matakuliah" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getMatkulResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cariMatkul">
+<xs:sequence>
+<xs:element name="search" type="xs:string" minOccurs="0"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="cariMatkulResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="tampilMatkul">
+<xs:sequence/>
+</xs:complexType>
+
+<xs:complexType name="tampilMatkulResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:anyType" minOccurs="0" maxOccurs="unbounded"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMatkul">
+<xs:sequence>
+<xs:element name="kode_matakuliah" type="xs:int"/>
+<xs:element name="nama_matakuliah" type="xs:string" minOccurs="0"/>
+<xs:element name="kode_prodi" type="xs:int"/>
+<xs:element name="jenis_matakuliah" type="xs:string" minOccurs="0"/>
+<xs:element name="bobot_matakuliah" type="xs:int"/>
+<xs:element name="bobot_teori" type="xs:int"/>
+<xs:element name="bobot_praktikum" type="xs:int"/>
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="addMatkulResponse">
+<xs:sequence/>
+</xs:complexType>
+</xs:schema>
